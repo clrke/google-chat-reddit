@@ -1,3 +1,4 @@
+import json
 import requests
 import settings
 import sys
@@ -50,11 +51,17 @@ def send_memes():
 
     meme = valid_memes[0]
 
-    message = '{0} {1}'.format(meme['data']['title'], meme['data']['url'])
+    message = '{0} <{1}>'.format(meme['data']['title'], meme['data']['url'])
 
     print(message)
 
-    # TODO: send the message
+    headers = {
+        'Content-Type': "application/json",
+        'Cache-Control': "no-cache"
+    }
+
+    response = requests.post(chat_url, data=json.dumps({'text': message}), headers=headers).json()
+    print(response)
 
     append_to_bot_history(meme['data']['id'])
 
