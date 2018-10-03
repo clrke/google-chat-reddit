@@ -1,10 +1,10 @@
 # Google Hangouts Chat bot for Reddit Memes
 
 ## Installation (steps 1-3 are optional)
-1. Create a settings.py
+1. Create a `settings.py`
 2. Add this line: `subreddit = '<subreddit, e.g., ProgrammerHumor>`
 3. Add this line: `hangouts_webhook_url = '<hangouts webhook url>`
-4. Install python3
+4. Install `python3`
 
 ## Running
 ### Running with settings.py
