@@ -5,7 +5,7 @@
 2. Add this line: `subreddit = '<subreddit, e.g., ProgrammerHumor>'`
 3. Add this line: `hangouts_webhook_url = '<hangouts webhook url>'`
 4. Add this line: `log_filename = 'memes.log'`
-5. Install `python3`
+5. Install `python3`, `pip`, and run `pip install requests`
 
 ## Running
 ### Running with settings.py
