@@ -10,7 +10,7 @@
 
 ## Running
 ### Running with settings.py
-Run `python sawaw_puas.py`. Make sure that you've followed steps 1-4 above.
+Run `python sawaw_puas.py`. Make sure that you've followed steps 2-5 above.
 
 ### Running with args
 Alternatively, you can run it without touching a settings.py by specifying the subreddit and hangouts webhook url via args.
