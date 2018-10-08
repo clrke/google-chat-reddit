@@ -15,3 +15,9 @@ Run `python sawaw_puas.py`. Make sure that you've followed steps 2-5 above.
 ### Running with args
 Alternatively, you can run it without touching a settings.py by specifying the subreddit and hangouts webhook url via args.
 `python sawaw_puas.py <subreddit> <hangouts webhook url> <log_filename>`
+
+#### Example:
+
+`
+python sawaw_puas.py ProgrammerHumor https://chat.googleapis.com/v1/spaces/xxyy/messages\?key\=1234\&token\=asdf memes.log
+`
