@@ -4,6 +4,7 @@ import settings
 import sys
 
 BOT_NAME = 'CHAT_REDDIT_BOT 0.1'
+MEMES_LOG_FILENAME = 'memes.log'
 
 def get_params():
     if len(sys.argv) > 1:
