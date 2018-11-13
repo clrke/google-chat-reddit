@@ -53,15 +53,12 @@ def send_memes():
 
     message = '{0} <{1}>'.format(meme['data']['title'], meme['data']['url'])
 
-    print(message)
-
     headers = {
         'Content-Type': "application/json",
         'Cache-Control': "no-cache"
     }
 
     response = requests.post(chat_url, data=json.dumps({'text': message}), headers=headers).json()
-    print(response)
 
     append_to_bot_history(log_filename, meme['data']['id'])
 
